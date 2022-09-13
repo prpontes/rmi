@@ -9,4 +9,5 @@ import java.rmi.RemoteException;
 public interface InterfaceServicos extends Remote {
     
     public int soma(int x, int y) throws RemoteException;
+    public void sub(int x, int y) throws RemoteException;
 }

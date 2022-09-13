@@ -15,7 +15,7 @@ public class Servidor {
         try{
             Servicos s = new Servicos();
             Naming.rebind("//localhost/servicos", s);
-            System.out.println("Servidor rodando!");
+            System.out.println("Servidor rodando...");
         }catch(RemoteException e){
             e.printStackTrace();
         }catch(MalformedURLException e){

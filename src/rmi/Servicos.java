@@ -16,4 +16,9 @@ public class Servicos extends UnicastRemoteObject implements InterfaceServicos{
     public int soma(int x, int y) throws RemoteException {
         return x+y;
     } 
+
+    @Override
+    public void sub(int x, int y) throws RemoteException {
+        System.out.printf("%d - %d = %d", x, y, (x-y));
+    }
 }
