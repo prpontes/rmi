@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-
+import rmi.Numero;
 /**
  *
  * @author Paulo
@@ -14,9 +14,13 @@ public class Cliente {
     public static void main(String args[]){
         try{
             InterfaceServicos s = (InterfaceServicos) Naming.lookup("//localhost/servicos");
-            //int resultado = s.soma(2, 5);
-            //System.out.printf("%d + %d = %d", 2, 5, resultado);
-            s.sub(5, 3);
+            Numero a = new Numero();
+            a.setNumero(2);
+            Numero b = new Numero();
+            b.setNumero(5);
+            Numero resultado = new Numero();
+            resultado.setNumero(s.soma(a, b).getNumero());
+            System.out.printf("%d + %d = %d", a.getNumero(), b.getNumero(), resultado.getNumero());
         }catch(NotBoundException e){
             e.printStackTrace();
         }catch(MalformedURLException e){

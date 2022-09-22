@@ -2,12 +2,12 @@ package rmi;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import rmi.Numero;
 /**
  *
  * @author Paulo
  */
 public interface InterfaceServicos extends Remote {
     
-    public int soma(int x, int y) throws RemoteException;
-    public void sub(int x, int y) throws RemoteException;
+    public Numero soma(Numero x, Numero y) throws RemoteException;
 }
