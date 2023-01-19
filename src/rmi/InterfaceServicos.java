@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 import rmi.Numero;
 /**
  *
- * @author Paulo
+ * @author Paulo Ricardo
  */
 public interface InterfaceServicos extends Remote {
     

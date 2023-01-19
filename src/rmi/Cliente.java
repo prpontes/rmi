@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
 import rmi.Numero;
 /**
  *
- * @author Paulo
+ * @author Paulo Ricardo
  */
 public class Cliente {
     

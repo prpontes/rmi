@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Paulo
+ * @author Paulo Ricardo
  */
 public class Numero implements Serializable {
     

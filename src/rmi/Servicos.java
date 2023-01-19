@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 /**
  *
- * @author Paulo
+ * @author Paulo Ricardo
  */
 public class Servicos extends UnicastRemoteObject implements InterfaceServicos{
 

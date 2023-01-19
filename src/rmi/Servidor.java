@@ -6,7 +6,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Paulo
+ * @author Paulo Ricardo
  */
 public class Servidor {
     
