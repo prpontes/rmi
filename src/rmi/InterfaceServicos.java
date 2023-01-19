@@ -10,4 +10,5 @@ import rmi.Numero;
 public interface InterfaceServicos extends Remote {
     
     public Numero soma(Numero x, Numero y) throws RemoteException;
+    public void salvarNumero(Numero x) throws RemoteException;
 }

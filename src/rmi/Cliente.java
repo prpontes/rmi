@@ -20,6 +20,7 @@ public class Cliente {
             b.setNumero(5);
             Numero resultado = new Numero();
             resultado.setNumero(s.soma(a, b).getNumero());
+            s.salvarNumero(resultado);
             System.out.printf("%d + %d = %d", a.getNumero(), b.getNumero(), resultado.getNumero());
         }catch(NotBoundException e){
             e.printStackTrace();
